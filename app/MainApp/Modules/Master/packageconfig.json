@@ -1,0 +1,234 @@
+{
+    "name": "Master Module",
+    "package_namespace": "Master",
+    "package_dir": "Master",
+    "is_package": 0,
+    "is_lib": 0,
+    "git": "",
+    "has_frontend": 1,
+    "has_api": 1,
+    "has_admin": 1,
+    "endpoint": {
+        "dev": {
+            "frontend": "master",
+            "api": "master",
+            "admin": "master"
+        },
+        "prod": {
+            "frontend": "master",
+            "api": "master",
+            "admin": "master"
+        }
+    },
+    "enable": 0,
+    "mode": "prod",
+    "access": {
+        "caption": "Master Module",
+        "description": "Master Module Description",
+        "icon": "ion-ios-clipboard",
+        "is_navbar": 1,
+        "has_acl": 1,
+        "tenant_group_id": 0,
+        "has_access": 1,
+        "children": {
+            "harilibur": {
+                "caption": "Hari Libur",
+                "acl_caption": "Manage Hari Libur",
+                "acl_description": "",
+                "route": { "name": "master.hari_libur.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "instansi": {
+                "caption": "Satuan Kerja",
+                "acl_caption": "Manage Satuan Kerja",
+                "acl_description": "",
+                "route": { "name": "master.instansi.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "jabatan": {
+                "caption": "Jabatan",
+                "acl_caption": "Manage Jabatan",
+                "acl_description": "",
+                "route": { "name": "master.jabatan.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "jenisijin": {
+                "caption": "Permohonan",
+                "acl_caption": "Manage Jenis Ijin",
+                "acl_description": "",
+                "route": { "name": "master.jenisijin.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "children" : {                    
+                    "kategori": {
+                        "caption": "Kategori Jenis Permohonan",
+                        "description": "",
+                        "route": { "name": "master.jenisijinkategori.list" },
+                        "class": "",
+                        "adds": null,
+                        "is_navbar": 1,
+                        "enable": 1,
+                        "tenant_group_id": 0,
+                        "active_acl": {
+                            "has_access": 1,
+                            "crud": {
+                                "c": 1,
+                                "r": 1,
+                                "u": 1,
+                                "d": 1
+                            }
+                        },
+                        "acl_config": {
+                            "show": 1,
+                            "crud": {
+                                "c": 1,
+                                "r": 1,
+                                "u": 1,
+                                "d": 1
+                            }
+                        }
+                    }
+                }
+            },
+            "shift": {
+                "caption": "Shift",
+                "acl_caption": "Shift",
+                "acl_description": "",
+                "route": { "name": "master.shift.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "mesinabsen": {
+                "caption": "Mesin Absen",
+                "acl_caption": "Manage Mesin Absen",
+                "acl_description": "",
+                "route": { "name": "master.mesinabsen.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            }
+        }
+    }
+}

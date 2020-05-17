@@ -1,0 +1,15 @@
+{
+    "Absensi": [],
+    "Dashboard": [],
+    "Laporan": [],
+    "Master": [],
+    "Pegawai": [],
+    "moduser": {
+        "registration": {
+            "enable": 0
+        },
+        "login": {
+            "rememberme": 0
+        }
+    }
+}

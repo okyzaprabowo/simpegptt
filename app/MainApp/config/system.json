@@ -1,0 +1,55 @@
+{
+    "mode":"prod",
+    "laravel_key":"base64:Y3rGhWEYVZKRLE1odEcNc6IccVxE88A3Mojd5VusVZc=",
+    "web_state_persistant":0,
+    "web_serviceworker":0,
+    "web_pushnotif":0,
+    "locale":"id",
+    "fallback_locale":"id",
+    "lang_endpoint": "/getlang/lang",
+    "has_auth": 1,
+    "has_acl": 1,
+    "web_admin": {
+        "theme": "corporate",
+        "navbar_bgcolor": "primary-darker navbar-dark",
+        "sidenav_bgcolor": "sidenav-theme",
+        "footer_bgcolor": "success-darker footer-dark",
+        "layout": "admin/index",
+        "multitenant": {
+            "active": 0,
+            "default_route": {"name":"dashboard","params":{"group_app":"admin"}},
+            "api_endpoint": {
+                "tenant":"/gettenant/tenant",
+                "tenant_group":"/gettenant/tenant_group"
+            },
+            "autodetect_login": 0
+        },
+        "protected_by_auth": 1,
+        "assets_js":[],
+        "assets_link":[
+            "assets/css/mainStyle.css"
+        ],
+        "assets_template": {
+            "font" : {
+                "fontawesome": 1,
+                "ionicons": 1,
+                "linearicons": 1,
+                "open-iconic": 0,
+                "pe-icon-7-stroke": 0
+            }
+        }
+    },
+    "template":{
+        "frontend": {
+            "title": "Aplikasi SIPEG PTT ESDM"
+        },
+        "admin": {
+            "title": "SIPEG PTT ESDM",
+            "footer": {
+                "show": 1,
+                "text": "ESDM @ 2019",
+                "menu": []
+            }
+        }
+    }
+}

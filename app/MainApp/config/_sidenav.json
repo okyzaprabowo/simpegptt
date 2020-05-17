@@ -1,0 +1,75 @@
+{
+    "moduser": {
+        "caption": "User Management",
+        "description": "",
+        "acl_caption": "Module User",
+        "acl_description": "",
+        "icon": "ion ion-md-person",
+        "has_acl": 1,
+        "is_navbar": 1,
+        "tenant_group_id": 0,
+        "has_access": 1,
+        "children": {
+            "user": {
+                "caption": "Manage User",
+                "acl_caption": "Manger User Data",
+                "acl_description": "",
+                "route": {
+                    "name": "user.list"
+                },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "role": {
+                "caption": "Manage Role",
+                "acl_caption": "Manager User Role Data",
+                "acl_description": "",
+                "route": {
+                    "name": "role.list"
+                },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,143 @@
+{
+    "Master": {
+        "has_access": 1
+    },
+    "Master.harilibur": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "Master.instansi": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "Master.jabatan": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "Master.jenisijin": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "Master.jenisijin.kategori": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "Master.mesinabsen": {
+        "has_access": 1,
+        "c": 0,
+        "r": 1,
+        "u": 1,
+        "d": 0    
+    },
+    "Master.shift": {
+        "has_access": 1,
+        "c": 1,
+        "r": 1,
+        "u": 1,
+        "d": 1   
+    },
+    "Pegawai": {
+        "has_access": 1
+    },
+    "Pegawai.master": {
+        "has_access": 1,
+        "c": 1,
+        "r": 1,
+        "u": 1,
+        "d": 1    
+    },
+    "Pegawai.profile": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0    
+    },
+    "Absensi": {
+        "has_access": 1
+    },
+    "Absensi.permohonan": {
+        "has_access": 1,
+        "c": 0,
+        "r": 1,
+        "u": 1,
+        "d": 1    
+    },
+    "Absensi.approval": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0    
+    },
+    "Absensi.shift": {
+        "has_access": 1,
+        "c": 1,
+        "r": 1,
+        "u": 1,
+        "d": 1      
+    },
+    "Laporan": {
+        "has_access": 1
+    },
+    "Laporan.kehadiranharian": {
+        "has_access": 1,
+        "c": 0,
+        "r": 1,
+        "u": 0,
+        "d": 0    
+    },
+    "Laporan.rekapkehadiran": {
+        "has_access": 1,
+        "c": 0,
+        "r": 1,
+        "u": 0,
+        "d": 0   
+    },
+    "Laporan.jejakkehadiran": {
+        "has_access": 1,
+        "c": 0,
+        "r": 1,
+        "u": 0,
+        "d": 0    
+    },
+    "moduser": {
+        "has_access": 0
+    },
+    "moduser.user": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "moduser.role": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    },
+    "moduser.broadcast": {
+        "has_access": 0,
+        "c": 0,
+        "r": 0,
+        "u": 0,
+        "d": 0
+    }    
+}

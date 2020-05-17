@@ -1,0 +1,816 @@
+{
+    "Absensi": {
+        "name": "Absensi Module",
+        "package_namespace": "Absensi",
+        "package_dir": "Absensi",
+        "is_package": 0,
+        "is_lib": 0,
+        "git": "",
+        "has_frontend": 1,
+        "has_api": 1,
+        "has_admin": 1,
+        "endpoint": {
+            "dev": {
+                "frontend": "absensi",
+                "api": "absensi",
+                "admin": "absensi"
+            },
+            "prod": {
+                "frontend": "absensi",
+                "api": "absensi",
+                "admin": "absensi"
+            }
+        },
+        "enable": 0,
+        "mode": "prod",
+        "access": {
+            "caption": "Absensi module",
+            "description": "Absensi module description",
+            "icon": "ion-ios-clipboard",
+            "is_navbar": 1,
+            "has_acl": 1,
+            "tenant_group_id": 0,
+            "has_access": 1,
+            "children": {
+                "permohonan": {
+                    "caption": "Pengajuan ketidakhadiran",
+                    "description": "",
+                    "route": {
+                        "name": "permohonan_absen.index"
+                    },
+                    "class": "",
+                    "adds": null,
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "approval": {
+                    "caption": "Approval Pengajuan ketidakhadiran",
+                    "description": "",
+                    "route": {
+                        "name": "permohonan_absen.approval"
+                    },
+                    "class": "",
+                    "adds": null,
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "shift": {
+                    "caption": "Shift Perpegawai",
+                    "description": "",
+                    "route": {
+                        "name": "shift_personal.index"
+                    },
+                    "class": "",
+                    "adds": null,
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                }
+            }
+        },
+        "year_start": 2019
+    },
+    "Dashboard": {
+        "name": "Dashboard Module",
+        "package_namespace": "Dashboard",
+        "package_dir": "Dashboard",
+        "is_package": 0,
+        "is_lib": 0,
+        "git": "",
+        "has_frontend": 1,
+        "has_api": 1,
+        "has_admin": 1,
+        "endpoint": {
+            "dev": {
+                "frontend": "\/",
+                "api": "\/",
+                "admin": "\/"
+            },
+            "prod": {
+                "frontend": "\/",
+                "api": "\/",
+                "admin": "\/"
+            }
+        },
+        "enable": 0,
+        "mode": "prod",
+        "access": {
+            "caption": "Dashboard Module",
+            "description": "Dashboard Module",
+            "icon": "ion-ios-clipboard",
+            "is_navbar": 1,
+            "has_acl": 0,
+            "tenant_group_id": 0,
+            "has_access": 1
+        }
+    },
+    "Laporan": {
+        "name": "Laporan",
+        "package_namespace": "Laporan",
+        "package_dir": "Laporan",
+        "is_package": 0,
+        "is_lib": 0,
+        "git": "",
+        "has_frontend": 0,
+        "has_api": 1,
+        "has_admin": 1,
+        "endpoint": {
+            "dev": {
+                "frontend": "laporan",
+                "api": "laporan",
+                "admin": "laporan"
+            },
+            "prod": {
+                "frontend": "laporan",
+                "api": "laporan",
+                "admin": "laporan"
+            }
+        },
+        "enable": 1,
+        "mode": "prod",
+        "access": {
+            "caption": "Laporan",
+            "description": "",
+            "route": {
+                "name": "laporan"
+            },
+            "icon": "ion-ios-people",
+            "tenant_group_id": 0,
+            "has_access": 1,
+            "is_navbar": 0,
+            "has_acl": 1,
+            "children": {
+                "kehadiranharian": {
+                    "caption": "Kehadiran Harian",
+                    "acl_caption": "Menampilkan Laporan Kehadiran Harian",
+                    "acl_description": "",
+                    "route": {
+                        "name": "laporan.kehadiran_harian"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 0,
+                            "d": 0
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 0,
+                            "d": 0
+                        }
+                    }
+                },
+                "rekapkehadiran": {
+                    "caption": "Rekap Kehadiran",
+                    "acl_caption": "Menampilkan Laporan Rekap Kehadiran",
+                    "acl_description": "",
+                    "route": {
+                        "name": "laporan.rekap_kehadiran"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 0,
+                            "d": 0
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 0,
+                            "d": 0
+                        }
+                    }
+                },
+                "jejakkehadiran": {
+                    "caption": "Jejak Kehadiran",
+                    "acl_caption": "Menampilkan Laporan Jejak Kehadiran",
+                    "acl_description": "",
+                    "route": {
+                        "name": "laporan.jejak_kehadiran"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 0,
+                            "d": 0
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 0,
+                            "d": 0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Master": {
+        "name": "Master Module",
+        "package_namespace": "Master",
+        "package_dir": "Master",
+        "is_package": 0,
+        "is_lib": 0,
+        "git": "",
+        "has_frontend": 1,
+        "has_api": 1,
+        "has_admin": 1,
+        "endpoint": {
+            "dev": {
+                "frontend": "master",
+                "api": "master",
+                "admin": "master"
+            },
+            "prod": {
+                "frontend": "master",
+                "api": "master",
+                "admin": "master"
+            }
+        },
+        "enable": 0,
+        "mode": "prod",
+        "access": {
+            "caption": "Master Module",
+            "description": "Master Module Description",
+            "icon": "ion-ios-clipboard",
+            "is_navbar": 1,
+            "has_acl": 1,
+            "tenant_group_id": 0,
+            "has_access": 1,
+            "children": {
+                "harilibur": {
+                    "caption": "Hari Libur",
+                    "acl_caption": "Manage Hari Libur",
+                    "acl_description": "",
+                    "route": {
+                        "name": "master.hari_libur.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "instansi": {
+                    "caption": "Satuan Kerja",
+                    "acl_caption": "Manage Satuan Kerja",
+                    "acl_description": "",
+                    "route": {
+                        "name": "master.instansi.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "jabatan": {
+                    "caption": "Jabatan",
+                    "acl_caption": "Manage Jabatan",
+                    "acl_description": "",
+                    "route": {
+                        "name": "master.jabatan.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "jenisijin": {
+                    "caption": "Permohonan",
+                    "acl_caption": "Manage Jenis Ijin",
+                    "acl_description": "",
+                    "route": {
+                        "name": "master.jenisijin.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "children": {
+                        "kategori": {
+                            "caption": "Kategori Jenis Permohonan",
+                            "description": "",
+                            "route": {
+                                "name": "master.jenisijinkategori.list"
+                            },
+                            "class": "",
+                            "adds": null,
+                            "is_navbar": 1,
+                            "enable": 1,
+                            "tenant_group_id": 0,
+                            "active_acl": {
+                                "has_access": 1,
+                                "crud": {
+                                    "c": 1,
+                                    "r": 1,
+                                    "u": 1,
+                                    "d": 1
+                                }
+                            },
+                            "acl_config": {
+                                "show": 1,
+                                "crud": {
+                                    "c": 1,
+                                    "r": 1,
+                                    "u": 1,
+                                    "d": 1
+                                }
+                            }
+                        }
+                    }
+                },
+                "shift": {
+                    "caption": "Shift",
+                    "acl_caption": "Shift",
+                    "acl_description": "",
+                    "route": {
+                        "name": "master.shift.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "mesinabsen": {
+                    "caption": "Mesin Absen",
+                    "acl_caption": "Manage Mesin Absen",
+                    "acl_description": "",
+                    "route": {
+                        "name": "master.mesinabsen.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "Pegawai": {
+        "name": "Pegawai",
+        "package_namespace": "Pegawai",
+        "package_dir": "Pegawai",
+        "is_package": 0,
+        "is_lib": 0,
+        "git": "",
+        "has_frontend": 0,
+        "has_api": 1,
+        "has_admin": 1,
+        "endpoint": {
+            "dev": {
+                "frontend": "pegawai",
+                "api": "pegawai",
+                "admin": "pegawai"
+            },
+            "prod": {
+                "frontend": "pegawai",
+                "api": "pegawai",
+                "admin": "pegawai"
+            }
+        },
+        "enable": 1,
+        "mode": "prod",
+        "access": {
+            "caption": "Pegawai",
+            "description": "",
+            "route": {
+                "name": "pegawai"
+            },
+            "icon": "ion-ios-people",
+            "tenant_group_id": 0,
+            "has_access": 1,
+            "is_navbar": 0,
+            "has_acl": 1,
+            "children": {
+                "master": {
+                    "caption": "Daftar Pegawai",
+                    "acl_caption": "Manger Pegawai",
+                    "acl_description": "",
+                    "route": {
+                        "name": "pegawai.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "profile": {
+                    "caption": "Data Pribadi",
+                    "acl_caption": "Edit Data Pribadi",
+                    "acl_description": "",
+                    "route": {
+                        "name": "pegawai.profile"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 1,
+                            "d": 0
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 0,
+                            "r": 1,
+                            "u": 1,
+                            "d": 0
+                        }
+                    }
+                }
+            }
+        }
+    },
+    "moduser": {
+        "name": "User Module",
+        "description": "Module User management & User Auth",
+        "package_namespace": "moduser",
+        "package_dir": "moduser",
+        "is_package": 1,
+        "is_lib": 0,
+        "git": "https:\/\/gitlab.com\/hp-synapse\/mod-user.git",
+        "has_frontend": 1,
+        "has_api": 1,
+        "has_admin": 1,
+        "endpoint": {
+            "dev": {
+                "frontend": "user",
+                "api": "user",
+                "admin": "user"
+            },
+            "prod": {
+                "frontend": "user",
+                "api": "user",
+                "admin": "user"
+            }
+        },
+        "enable": 1,
+        "mode": "prod",
+        "access": {
+            "caption": "User Management",
+            "description": "",
+            "acl_caption": "Module User",
+            "acl_description": "",
+            "icon": "ion ion-md-person",
+            "has_acl": 1,
+            "is_navbar": 1,
+            "tenant_group_id": 0,
+            "has_access": 1,
+            "children": {
+                "user": {
+                    "caption": "Manage User",
+                    "acl_caption": "Manger User Data",
+                    "acl_description": "",
+                    "route": {
+                        "name": "user.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                },
+                "role": {
+                    "caption": "Manage Role",
+                    "acl_caption": "Manager User Role Data",
+                    "acl_description": "",
+                    "route": {
+                        "name": "role.list"
+                    },
+                    "class": "",
+                    "is_navbar": 1,
+                    "enable": 1,
+                    "tenant_group_id": 0,
+                    "active_acl": {
+                        "has_access": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    },
+                    "acl_config": {
+                        "show": 1,
+                        "crud": {
+                            "c": 1,
+                            "r": 1,
+                            "u": 1,
+                            "d": 1
+                        }
+                    }
+                }
+            }
+        },
+        "auth_endpoint": {
+            "dev": "auth",
+            "prod": "auth"
+        },
+        "auth_template": {
+            "type": 0,
+            "custom": {
+                "register": "",
+                "login": ""
+            }
+        },
+        "registration": {
+            "enable": 0,
+            "default_role_code": "admin",
+            "field": [
+                "email",
+                "password"
+            ]
+        },
+        "login": {
+            "rememberme": 0,
+            "forgotpassword": 1
+        },
+        "has_auth_grant": 1,
+        "session_lifetime": 30,
+        "users_hidden_field": [],
+        "user_profiles": {
+            "hide_all": 0,
+            "hide": [],
+            "adds": []
+        },
+        "user_form_tab": {
+            "profile": {
+                "caption": "Profile",
+                "component": ".\/userform\/profile"
+            },
+            "adds": []
+        },
+        "user_profile_tab": {
+            "profile": {
+                "caption": "Profile",
+                "component": ".\/userprofile\/profile"
+            },
+            "adds": []
+        },
+        "role_hidden_field": [],
+        "user_level": {
+            "min": 1,
+            "max": 99
+        },
+        "notification": {
+            "enable": 1,
+            "show": 1,
+            "firebase_config_path": "app\/MainApp\/config\/firebase.json",
+            "firebase": {
+                "server_key": "AAAAL_s8VSI:APA91bHLUgF6Vc2mQPwk-bbjuvzT18VhOt9XMFcBk691cmt6YYbpKhGuF49VPvnbW_l0emKPBPDN9u-1kuF1eGR-uPk_tIWSaUoxptQnvBP0AP8QTukUlGuldrlRfNI_PkQN-UOVqsx9",
+                "sender_id": "206078498082",
+                "database_url": "https:\/\/api-project-206078498082.firebaseio.com"
+            },
+            "use_jobs": 1,
+            "channels_service": {
+                "1": "firebase",
+                "2": "pusher",
+                "3": "aws_sns"
+            },
+            "channels": {
+                "all": {
+                    "firebase": "all",
+                    "pusher": "",
+                    "aws_sns": ""
+                },
+                "errorlog": {
+                    "firebase": "errorlog",
+                    "pusher": "",
+                    "aws_sns": ""
+                }
+            }
+        }
+    }
+}

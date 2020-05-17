@@ -1,0 +1,121 @@
+{
+    "name": "Absensi Module",
+    "package_namespace": "Absensi",
+    "package_dir": "Absensi",
+    "is_package": 0,
+    "is_lib": 0,
+    "git": "",
+    "has_frontend": 1,
+    "has_api": 1,
+    "has_admin": 1,
+    "endpoint": {
+        "dev": {
+            "frontend": "absensi",
+            "api": "absensi",
+            "admin": "absensi"
+        },
+        "prod": {
+            "frontend": "absensi",
+            "api": "absensi",
+            "admin": "absensi"
+        }
+    },
+    "enable": 0,
+    "mode": "prod",
+    "access": {
+        "caption": "Absensi module",
+        "description": "Absensi module description",
+        "icon": "ion-ios-clipboard",
+        "is_navbar": 1,
+        "has_acl": 1,
+        "tenant_group_id": 0,
+        "has_access": 1,
+        "children": {
+            "permohonan": {
+                "caption": "Pengajuan ketidakhadiran",
+                "description": "",
+                "route": { "name": "permohonan_absen.index" },
+                "class": "",
+                "adds": null,
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "approval": {
+                "caption": "Approval Pengajuan ketidakhadiran",
+                "description": "",
+                "route": { "name": "permohonan_absen.approval" },
+                "class": "",
+                "adds": null,
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },            
+            "shift": {
+                "caption": "Shift Perpegawai",
+                "description": "",
+                "route": { "name": "shift_personal.index" },
+                "class": "",
+                "adds": null,
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            }
+        }
+    },
+    "year_start": 2019
+}

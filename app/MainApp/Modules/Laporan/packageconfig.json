@@ -1,0 +1,121 @@
+{
+    "name": "Laporan",
+    "package_namespace": "Laporan",
+    "package_dir": "Laporan",
+    "is_package": 0,
+    "is_lib": 0,
+    "git": "",
+    "has_frontend": 0,
+    "has_api": 1,
+    "has_admin": 1,
+    "endpoint": {
+        "dev": {
+            "frontend": "laporan",
+            "api": "laporan",
+            "admin": "laporan"
+        },
+        "prod": {
+            "frontend": "laporan",
+            "api": "laporan",
+            "admin": "laporan"
+        }
+    },
+    "enable": 1,
+    "mode": "prod",
+    "access": {
+        "caption": "Laporan",
+        "description": "",
+        "route": { "name": "laporan" },
+        "icon": "ion-ios-people",
+        "tenant_group_id": 0,
+        "has_access": 1,
+        "is_navbar": 0,
+        "has_acl": 1,
+        "children": {
+            "kehadiranharian": {
+                "caption": "Kehadiran Harian",
+                "acl_caption": "Menampilkan Laporan Kehadiran Harian",
+                "acl_description": "",
+                "route": { "name": "laporan.kehadiran_harian" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 0,
+                        "d": 0
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 0,
+                        "d": 0
+                    }
+                }
+            },
+            "rekapkehadiran": {
+                "caption": "Rekap Kehadiran",
+                "acl_caption": "Menampilkan Laporan Rekap Kehadiran",
+                "acl_description": "",
+                "route": { "name": "laporan.rekap_kehadiran" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 0,
+                        "d": 0
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 0,
+                        "d": 0
+                    }
+                }
+            },
+            "jejakkehadiran": {
+                "caption": "Jejak Kehadiran",
+                "acl_caption": "Menampilkan Laporan Jejak Kehadiran",
+                "acl_description": "",
+                "route": { "name": "laporan.jejak_kehadiran" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 0,
+                        "d": 0
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 0,
+                        "d": 0
+                    }
+                }
+            }
+        }
+    }
+}

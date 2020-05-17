@@ -1,0 +1,25 @@
+.default-style {
+  @import '~bootstrap/scss/functions';
+  @import '../_appwork/functions';
+  @import '../_custom-variables/appwork';
+  $font-weight-thin: 100 !default;
+  @import '../_appwork/variables';
+  @import '~bootstrap/scss/variables';
+  @import '~bootstrap/scss/mixins';
+  @import '../_appwork/mixins';
+
+  @import './_src/appwork-130';
+}
+
+.material-style {
+  @import '~bootstrap/scss/functions';
+  @import '../_appwork/functions';
+  @import '../_custom-variables/appwork-material';
+  $font-weight-thin: 100 !default;
+  @import '../_appwork/variables-material';
+  @import '~bootstrap/scss/variables';
+  @import '~bootstrap/scss/mixins';
+  @import '../_appwork/mixins';
+
+  @import './_src/appwork-130';
+}

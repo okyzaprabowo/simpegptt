@@ -1,0 +1,29 @@
+{
+    "client_id": "bpka_bandung",
+    "apps_id": "proj-bpka1",
+    "apps_key": "",
+    "project_code": "proj-bpka1",
+    "email": "",
+    "git_email": "",
+    "git": "https://gitlab.com/wawangkong/proj-bpka1.git",
+    "base_version": "",
+    "endpoint": {
+        "dev": {
+            "domain": "http://localhost:8080/",
+            "home_slug": "",
+            "frontend": "/WEDONTUSEIT",
+            "api": "/api",
+            "admin": ""
+        },
+        "prod": {
+            "domain": "http://203.189.89.87/",
+            "home_slug": "sipegptt",
+            "frontend": "/WEDONTUSEIT",
+            "api": "/api",
+            "admin": ""
+        }
+    },
+    "app_name": "SIAPSEDIA",
+    "title": "Sistem Informasi Barang Persediaan Kota Bandung",
+    "description": "Badan Pengelolaan Keuangan dan Aset"
+}

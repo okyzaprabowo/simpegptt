@@ -1,0 +1,93 @@
+{
+    "name": "Pegawai",
+    "package_namespace": "Pegawai",
+    "package_dir": "Pegawai",
+    "is_package": 0,
+    "is_lib": 0,
+    "git": "",
+    "has_frontend": 0,
+    "has_api": 1,
+    "has_admin": 1,
+    "endpoint": {
+        "dev": {
+            "frontend": "pegawai",
+            "api": "pegawai",
+            "admin": "pegawai"
+        },
+        "prod": {
+            "frontend": "pegawai",
+            "api": "pegawai",
+            "admin": "pegawai"
+        }
+    },
+    "enable": 1,
+    "mode": "prod",
+    "access": {
+        "caption": "Pegawai",
+        "description": "",
+        "route": { "name": "pegawai" },
+        "icon": "ion-ios-people",
+        "tenant_group_id": 0,
+        "has_access": 1,
+        "is_navbar": 0,
+        "has_acl": 1,
+        "children": {
+            "master": {
+                "caption": "Daftar Pegawai",
+                "acl_caption": "Manger Pegawai",
+                "acl_description": "",
+                "route": { "name": "pegawai.list" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 1,
+                        "r": 1,
+                        "u": 1,
+                        "d": 1
+                    }
+                }
+            },
+            "profile": {
+                "caption": "Data Pribadi",
+                "acl_caption": "Edit Data Pribadi",
+                "acl_description": "",
+                "route": { "name": "pegawai.profile" },
+                "class": "",
+                "is_navbar": 1,
+                "enable": 1,
+                "tenant_group_id": 0,
+                "active_acl": {
+                    "has_access": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 1,
+                        "d": 0
+                    }
+                },
+                "acl_config": {
+                    "show": 1,
+                    "crud": {
+                        "c": 0,
+                        "r": 1,
+                        "u": 1,
+                        "d": 0
+                    }
+                }
+            }
+        }
+    }
+}

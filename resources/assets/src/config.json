@@ -1,0 +1,20 @@
+{
+    "allowed_systemEnv_key": [
+        "mode",
+        "laravel_key",
+        "web_state_persistant",
+        "web_serviceworker",
+        "web_pushnotif",
+        "locale",
+        "fallback_locale",
+        "lang_endpoint"
+    ],
+    "protected_packageLocal_key": [
+        "name",
+        "package_namespace",
+        "package_dir",
+        "is_package",
+        "is_lib",
+        "git"
+    ]
+}

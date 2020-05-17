@@ -1,0 +1,97 @@
+{
+    "Laporan": {
+        "acl_caption": "Laporan",
+        "acl_description": "",
+        "children": {
+            "Laporan.kehadiranharian": {
+                "show": 1,
+                "crud": {
+                    "c": 0,
+                    "r": 1,
+                    "u": 0,
+                    "d": 0
+                },
+                "acl_caption": "Menampilkan Laporan Kehadiran Harian",
+                "acl_description": ""
+            },
+            "Laporan.rekapkehadiran": {
+                "show": 1,
+                "crud": {
+                    "c": 0,
+                    "r": 1,
+                    "u": 0,
+                    "d": 0
+                },
+                "acl_caption": "Menampilkan Laporan Rekap Kehadiran",
+                "acl_description": ""
+            },
+            "Laporan.jejakkehadiran": {
+                "show": 1,
+                "crud": {
+                    "c": 0,
+                    "r": 1,
+                    "u": 0,
+                    "d": 0
+                },
+                "acl_caption": "Menampilkan Laporan Jejak Kehadiran",
+                "acl_description": ""
+            }
+        }
+    },
+    "Pegawai": {
+        "acl_caption": "Pegawai",
+        "acl_description": "",
+        "children": {
+            "Pegawai.master": {
+                "show": 1,
+                "crud": {
+                    "c": 1,
+                    "r": 1,
+                    "u": 1,
+                    "d": 1
+                },
+                "acl_caption": "Manger Pegawai",
+                "acl_description": ""
+            },
+            "Pegawai.profile": {
+                "show": 1,
+                "crud": {
+                    "c": 0,
+                    "r": 1,
+                    "u": 1,
+                    "d": 0
+                },
+                "acl_caption": "Edit Data Pribadi",
+                "acl_description": ""
+            }
+        }
+    },
+    "moduser": {
+        "acl_caption": "Module User",
+        "acl_description": "",
+        "children": {
+            "moduser.user": {
+                "show": 1,
+                "crud": {
+                    "c": 1,
+                    "r": 1,
+                    "u": 1,
+                    "d": 1
+                },
+                "acl_caption": "Manger User Data",
+                "acl_description": ""
+            },
+            "moduser.role": {
+                "show": 1,
+                "crud": {
+                    "c": 1,
+                    "r": 1,
+                    "u": 1,
+                    "d": 1
+                },
+                "acl_caption": "Manager User Role Data",
+                "acl_description": ""
+            }
+        }
+    }
+}

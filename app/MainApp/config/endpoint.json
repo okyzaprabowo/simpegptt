@@ -1,0 +1,33 @@
+{
+    "domain": "http:\/\/localhost:8000",
+    "admin": {
+        "app": "",
+        "auth": "\/auth",
+        "Dashboard": "\/",
+        "Example": "\/example",
+        "Master": "\/master",
+        "Report": "\/report",
+        "Transaction": "\/transaction",
+        "moduser": "\/user"
+    },
+    "frontend": {
+        "app": "\/WEDONTUSEIT",
+        "auth": "\/WEDONTUSEIT\/auth",
+        "Dashboard": "\/WEDONTUSEIT\/",
+        "Example": "\/WEDONTUSEIT\/example",
+        "Master": "\/WEDONTUSEIT\/master",
+        "Report": "\/WEDONTUSEIT\/report",
+        "Transaction": "\/WEDONTUSEIT\/transaction",
+        "moduser": "\/WEDONTUSEIT\/user"
+    },
+    "api": {
+        "app": "\/api",
+        "auth": "\/api\/auth",
+        "Dashboard": "\/api\/dashboard",
+        "Example": "\/api\/example",
+        "Master": "\/api\/master",
+        "Report": "\/api\/report",
+        "Transaction": "\/api\/transaction",
+        "moduser": "\/api\/user"
+    }
+}

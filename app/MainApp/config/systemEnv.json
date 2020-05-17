@@ -1,0 +1,9 @@
+{
+    "mode": "prod",
+    "laravel_key": "base64:Y3rGhWEYVZKRLE1odEcNc6IccVxE88A3Mojd5VusVZc=",
+    "web_state_persistant": 0,
+    "web_serviceworker": 0,
+    "web_pushnotif": 0,
+    "locale": "en",
+    "fallback_locale": "en"
+}

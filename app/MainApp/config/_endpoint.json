@@ -1,0 +1,33 @@
+{
+    "domain": "http:\/\/203.189.89.87\/",
+    "admin": {
+        "app": " ",
+        "auth": " \/auth",
+        "Absensi": " \/absensi",
+        "Dashboard": " \/",
+        "Laporan": " \/laporan",
+        "Master": " \/master",
+        "Pegawai": " \/pegawai",
+        "moduser": " \/user"
+    },
+    "frontend": {
+        "app": " \/WEDONTUSEIT",
+        "auth": " \/WEDONTUSEIT\/auth",
+        "Absensi": " \/WEDONTUSEIT\/absensi",
+        "Dashboard": " \/",
+        "Laporan": " \/WEDONTUSEIT\/laporan",
+        "Master": " \/WEDONTUSEIT\/master",
+        "Pegawai": " \/WEDONTUSEIT\/pegawai",
+        "moduser": " \/WEDONTUSEIT\/user"
+    },
+    "api": {
+        "app": " \/api",
+        "auth": " \/api\/auth",
+        "Absensi": " \/api\/absensi",
+        "Dashboard": " \/",
+        "Laporan": " \/api\/laporan",
+        "Master": " \/api\/master",
+        "Pegawai": " \/api\/pegawai",
+        "moduser": " \/api\/user"
+    }
+}
