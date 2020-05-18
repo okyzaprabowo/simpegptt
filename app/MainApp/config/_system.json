@@ -58,7 +58,7 @@
         }
     },
     "path": {
-        "MainApp": "\/Users\/arisoftindonesia\/Documents\/Tekmira\/home\/app\/MainApp",
-        "basePath": "\/Users\/arisoftindonesia\/Documents\/Tekmira\/home"
+        "MainApp": "\/var\/www\/html\/simpegptt\/app\/MainApp",
+        "basePath": "\/var\/www\/html\/simpegptt"
     }
 }
