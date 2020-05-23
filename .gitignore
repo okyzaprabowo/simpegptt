@@ -27,4 +27,3 @@ Homestead.json
 vendor/
 yarn.lock
 package-lock.json
-composer.lock
