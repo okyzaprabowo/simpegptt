@@ -16,12 +16,14 @@ public_html/storage
 public_html/hot
 
 storage/*.key
+storage/framework/sessions/
+storage/framework/views/
+storage/framework/cache
 .env
 Homestead.yaml
 Homestead.json
 /.vagrant
 .phpunit.result.cache
-storage/
 vendor/
 yarn.lock
 package-lock.json
