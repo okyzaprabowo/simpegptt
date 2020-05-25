@@ -19,6 +19,8 @@ use App\Base\BaseRepository;
 use App\MainApp\Modules\moduser\Services\UserAuth;
 use Illuminate\Support\Facades\Log;
 
+use Illuminate\Support\Facades\DB;
+
 class Absensi extends BaseRepository
 {    
     /**
@@ -481,15 +483,23 @@ class Absensi extends BaseRepository
             $jamScanKeluar = new Carbon($absen['scan_keluar']);                     
 
             //total realisasi jam kerja hari ini, dari scan masuk ke scan keluar
-            $update['total_jam'] = $jamScanMasuk->diffInSeconds($absen['scan_keluar'], false);
-
+            
             //jika jam scan masuk melebihi jam masuk maka telat
-            if($jamScanMasuk->greaterThan($jamKerjaMasuk))
+            if($jamScanMasuk->greaterThan($jamKerjaMasuk)){
+                $update['total_jam'] = $jamScanMasuk->diffInSeconds($absen['scan_keluar'], false);
                 $update['keterlambatan_jam'] = $jamKerjaMasuk->diffInSeconds($absen['scan_masuk'], false);
+            }
 
             //dari scan keluar ke jam keluar
-            if($jamScanKeluar->lessThan($jamKerjaKeluar))
+            if($jamScanKeluar->lessThan($jamKerjaKeluar)){
+                if($jamScanMasuk->greaterThan($jamKerjaMasuk)){
+                    $update['total_jam'] = $jamScanMasuk->diffInSeconds($absen['scan_keluar'], false);
+                }else{
+                    $update['total_jam'] = $jamKerjaMasuk->diffInSeconds($absen['scan_keluar'], false);
+                }
+
                 $update['pulang_cepat_jam'] = $jamScanKeluar->diffInSeconds($absen['jam_keluar'], false);
+            }
 
             //kekurangan jam kerja, dari total jam kerja ke total seharusnya kerja
             if($update['jam_kerja']>$update['total_jam']){
@@ -1106,11 +1116,18 @@ class Absensi extends BaseRepository
                     $jamKerjaMasuk = new Carbon($data['jam_masuk']);
                     $setengahJamKerja =  ceil($jamKerjaMasuk->diffInMinutes($data['jam_keluar'], false)/2);
                     
-                    $data['jam_masuk_mulai_scan'] = (new Carbon($data['jam_masuk']))->subMinutes(180);
-                    $data['jam_masuk_akhir_scan'] = (new Carbon($data['jam_masuk']))->addMinutes($setengahJamKerja);
+                    // get from waktu_absen table
+                    $get_waktu_absen = DB::table('waktu_absen')->get();
+                    $jam_masuk_mulai_scan_minutes = (isset($get_waktu_absen[0]->jam_masuk_mulai_scan) && $get_waktu_absen[0]->jam_masuk_mulai_scan > 0) ? $get_waktu_absen[0]->jam_masuk_mulai_scan : 180;
+                    $jam_masuk_akhir_scan_minutes = (isset($get_waktu_absen[0]->jam_masuk_akhir_scan) && $get_waktu_absen[0]->jam_masuk_akhir_scan > 0) ? $get_waktu_absen[0]->jam_masuk_akhir_scan : $setengahJamKerja;
+                    $jam_keluar_mulai_scan_minutes = (isset($get_waktu_absen[0]->jam_keluar_mulai_scan) && $get_waktu_absen[0]->jam_keluar_mulai_scan > 0) ? $get_waktu_absen[0]->jam_keluar_mulai_scan : $setengahJamKerja;
+                    $jam_keluar_akhir_scan_minutes = (isset($get_waktu_absen[0]->jam_keluar_akhir_scan) && $get_waktu_absen[0]->jam_keluar_akhir_scan > 0) ? $get_waktu_absen[0]->jam_keluar_akhir_scan : 480;
+
+                    $data['jam_masuk_mulai_scan'] = (new Carbon($data['jam_masuk']))->subMinutes($jam_masuk_mulai_scan_minutes);
+                    $data['jam_masuk_akhir_scan'] = (new Carbon($data['jam_masuk']))->addMinutes($jam_masuk_akhir_scan_minutes);
                     
-                    $data['jam_keluar_mulai_scan'] = (new Carbon($data['jam_keluar']))->subMinutes($setengahJamKerja);
-                    $data['jam_keluar_akhir_scan'] = (new Carbon($data['jam_keluar']))->addMinutes(480);
+                    $data['jam_keluar_mulai_scan'] = (new Carbon($data['jam_keluar']))->subMinutes($jam_keluar_mulai_scan_minutes);
+                    $data['jam_keluar_akhir_scan'] = (new Carbon($data['jam_keluar']))->addMinutes($jam_keluar_akhir_scan_minutes);
                 }
                 
                 if($isInsert) {

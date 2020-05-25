@@ -37,7 +37,8 @@ class Pegawai extends Model
         'golongan_darah',
         'status_kawin_id',
         'tipe',
-        'foto'
+        'foto',
+        'is_enable'
     ];
 
     public function instansi()

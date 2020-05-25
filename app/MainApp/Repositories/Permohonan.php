@@ -28,6 +28,10 @@ class Permohonan extends BaseRepository
         $model = new PermohonanAbsen();
         // $pegawai = Pegawai::with(['jabaan');
         $model = $model->with(['pegawai','pegawai.jabatan','pegawai.instansi','jenisIjin']);
+        // only is_enable true
+        $model->whereHas('pegawai',function($q){
+            $q->where('is_enable', 1);
+        });
         $filter['searchField'] = ['pegawai.nama'];
         // var_dump($filter);
         if ( (isset($filter['instansi_id']))  ||  (isset($filter['q']))  ){

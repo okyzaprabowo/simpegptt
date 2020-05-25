@@ -57,7 +57,7 @@ class Kepegawaian extends BaseRepository
             $with[] = 'absensi';
         }
         $with[] = 'absensi.shift';
-        $model = Pegawai::with($with);
+        $model = Pegawai::where('is_enable', 1)->with($with);
         return $this->listPegawaiWithModel($model, $filter,$offset, $limit,$orderBy);
     }
 

@@ -56,6 +56,11 @@
                     <a href="{{ route('user.list') }}" class="sidenav-link"><div>Managemen User</div></a>
                 </li>
                 @endif
+                @if(\UserAuth::hasAccess('superadmin'))
+                <li class="sidenav-item{{ strpos($routeName, 'user.') === 0 ? ' active' : '' }}">
+                    <a href="{{ route('master.waktu_absen.list') }}" class="sidenav-link"><div>Waktu Absen</div></a>
+                </li>
+                @endif
                
             </ul>
         </li>

@@ -108,6 +108,9 @@ class RekapKehadiranController extends BaseController
             $filter[] = [['instansi_id', $instansiId],['OR instansi_induk_path', 'LIKE', '%;'.$instansiId.';%']];
         }
         
+        // only is_enable true
+        $filter[] = ['is_enable', 1];
+
         $this->output['data']['pegawai'] = Kepegawaian::listPegawai(
             $filter, $limit['offset'], $limit['limit'],$orderBy
         );

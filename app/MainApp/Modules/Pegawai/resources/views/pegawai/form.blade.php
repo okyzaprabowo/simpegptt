@@ -71,7 +71,8 @@ $isPegawaiPtt = \UserAuth::is('pegawai_ptt')?true:false;
                         username: '',
                         password: '',
                         password_confirmation: '',
-                    }
+                    },
+                    is_enable: 1,
                 },
 
                 //-------------------------------------------------------                
@@ -642,6 +643,20 @@ $isPegawaiPtt = \UserAuth::is('pegawai_ptt')?true:false;
 
                                 </td>
                             </tr>
+
+                            <tr>
+                                <td>Enable</td>
+                                <td>:</td>
+                                <td>
+                                    @if($mode=='profile' || $mode=='view')
+                                        {{ $data['is_enable'] == 1 ? 'Aktif' : 'Non Aktif' }}
+                                    @else
+                                        <input type="radio" onclick="vueFormPegawai.form.is_enable = this.value" name="is_enable" value="1" {{ isset($data['is_enable'])&&1==$data['is_enable']?' checked="true"':'' }}> Aktif &nbsp;&nbsp;
+                                        <input type="radio" onclick="vueFormPegawai.form.is_enable = this.value" name="is_enable" value="0" {{ isset($data['is_enable'])&&0==$data['is_enable']?' checked="true"':'' }}> Non Aktif
+                                    @endif
+                                </td>
+                            </tr>
+
                             <tr>
                                 <td colspan="3" align="right">                                    
                                     <a href="javascript:void(0)" @click="submitData" class="btn btn-success" v-if="isEditable">

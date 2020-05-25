@@ -184,7 +184,8 @@
                         <th style="min-width: 5rem;">Nama Pegawai</th> 
                         <th style="">Jabatan Sakira</th> 
                         <!-- <th style="">Penempatan Eselon IV</th>  -->
-                        <th style="">Satuan Kerja</th> 
+                        <th style="">Satuan Kerja</th>
+                        <th style="">Enable</th> 
                         <th style="width: 100px;">Aksi</th>
                     </tr>
                 </thead>
@@ -196,6 +197,7 @@
                         <td><span v-text="item.jabatan?item.jabatan.nama:''"></span></td> 
                         <!-- <td><span ></span></td>  -->
                         <td><span v-text="item.instansi?item.instansi.nama:''"></span></td> 
+                        <td><span v-text="item.is_enable == 1 ? 'Aktif' : 'Tidak Aktif'"></span></td> 
                         <td>                            
                             <div @click="showForm(true,item.id)" class="btn btn-success btn-xs icon-btn md-btn-flat article-tooltip" title="View">
                                 <i class="ion ion-md-eye"></i>

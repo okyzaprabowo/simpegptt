@@ -77,5 +77,10 @@ Route::group($group,function(){
         Route::put('/{id}', 'ShiftController@update')->name('master.shift.update');
         Route::delete('/{id}', 'ShiftController@delete')->name('master.shift.delete');
     });
+
+    Route::group(['prefix'=>'waktu_absen'],function(){  
+        Route::get('/', 'WaktuAbsenController@index')->name('master.waktu_absen.list');
+        Route::put('/', 'WaktuAbsenController@update')->name('master.waktu_absen.update');
+    });
 });
   

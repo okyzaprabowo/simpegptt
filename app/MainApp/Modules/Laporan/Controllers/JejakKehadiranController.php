@@ -118,6 +118,9 @@ class JejakKehadiranController extends BaseController
                 $filter[] = [['instansi_id', $instansiId],['OR instansi_induk_path', 'LIKE', '%;'.$instansiId.';%']];
             }
 
+            // only is_enable true
+            $filter[] = ['is_enable', 1];
+
             $this->output['data']['pegawai'] = Kepegawaian::listPegawai($filter);
             $this->output['data']['isPegawai'] = false;
             if($this->output['data']['pegawaiId']==0&&isset($this->output['data']['pegawai']['data'][0])){
