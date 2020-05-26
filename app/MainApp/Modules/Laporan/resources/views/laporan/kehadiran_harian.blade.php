@@ -293,8 +293,13 @@
                                 echo '<b data-toggle="tooltip" class="badge badge-danger" title="Alpha - Jenis permohonan tidak ditemukan"> &nbsp; </b>';
                             }
                         }else{
-                            //belum ada data, anggap alpa
-                            echo '<b data-toggle="tooltip" class="badge badge-danger" title="Alpha - Belum ada data"> &nbsp; </b>';
+                            if($v['created_at'] < $tanggal){
+                                //belum ada data, anggap alpa
+                                echo '<b data-toggle="tooltip" class="badge badge-danger" title="Alpha - Belum ada data"> &nbsp; </b>';
+                            }else{
+                                // data di input sesudah tgl absen ini
+                                echo '<center>-</center>';
+                            }
                         }
                          ?>
                         
