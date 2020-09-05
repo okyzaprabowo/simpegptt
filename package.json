@@ -20,7 +20,7 @@
         "axios": "~0.18.0",
         "cross-env": "~5.2.0",
         "laravel-mix": "~4.0.15",
-        "node-sass": "~4.11.0",
+        "node-sass": "~4.14.1",
         "resolve-url-loader": "2.3.1",
         "sass-loader": "7.*",
         "sass": "^1.17.3",
